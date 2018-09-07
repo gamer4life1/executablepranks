@@ -56,7 +56,7 @@ do
             echo "setxkbmap us colemak" >> ~/.bashrc
             ;;
         6) # Set default editor to gedit
-            echo "export EDITOR=gedit" >> ~/.bashrc
+            
             ;;
         7) # Eject CD-drive on certain commands
             echo "alias ls=\"sh -c 'eject &' && `which ls`\"" >> ~/.bashrc
