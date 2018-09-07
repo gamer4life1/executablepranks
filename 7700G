@@ -10,7 +10,7 @@ say Installing Ubuntu 16.04;
 say Done;
 say Downloading 7700G_manager.deb;
 say gdebi -install 7700G_manager.deb;
-say Admin password: ************;
+say Admin password: dhfgiergiyusegir;
 say Borrowing processor power form CRAY-2;
 say Calculated partile collision, saved to /home/7700G/Desktop/pc-10565;
 done
