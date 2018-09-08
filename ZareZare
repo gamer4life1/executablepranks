@@ -1,7 +1,7 @@
-touch Desktop/._.
-chflags hidden Desktop/._.
+touch $HOME/hi
+
 while true;do
-echo HI >> Desktop/._.
+echo HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHIIIIIIIIIIIIIIIIIIIIIIIIIIIII >> Documents/hi
 
 
 done
