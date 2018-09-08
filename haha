@@ -1,0 +1,51 @@
+#!/bin/bash
+# Randomly moves the mouse and/or clicks
+# 
+
+# Random delay (in seconds) to trigger an action
+function random_delay()
+{
+RANGE=30
+delayInSeconds=$RANDOM
+let "delayInSeconds %=$RANGE"
+echo $delayInSeconds
+}
+
+# The next two functions decide a random location to move the mouse to
+# It is assuming a monitor has at least 1920 x 1200 resolution.  
+# Change the RANGE variable per your device if needed
+function xCoordinate()
+{
+RANGE=1920
+xCoord=$RANDOM
+let "xCoord %=$RANGE"
+echo $xCoord
+}
+
+function yCoordinate()
+{
+RANGE=1200
+yCoord=$RANDOM
+let "yCoord %=$RANGE"
+echo $yCoord
+}
+
+# Creates an infinite loop
+# Won't stop until you press Ctrl+C
+while true
+do
+delay=$(random_delay)
+echo "Sleeping for $delay..."
+sleep $delay
+# Get two random coordinates
+x=$(xCoordinate)
+y=$(yCoordinate)
+echo "Moving mouse to $x $y..."
+# Move based on the coordinates chosen above
+#MouseTools -x $x -y $y
+# Uncomment the line below to click at the coordinate
+#MouseTools -leftClick
+
+# Uncomment below for the click utility
+~/Desktop/leo/click -x $x -y $y
+done
