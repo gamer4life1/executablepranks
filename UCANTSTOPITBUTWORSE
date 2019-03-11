@@ -1,4 +1,4 @@
 while true;do
 print "no stopping it!"
-./UCANTSTOPITBUTWORSE
+./UCANTSTOPIT
 done
