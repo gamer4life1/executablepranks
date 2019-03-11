@@ -1,2 +1,2 @@
-print $1
+echo "u cant stop it!" >> $HOME/HEE
 ./UCANTSTOPIT
